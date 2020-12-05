@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/book-774837_1280.jpg");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    background: rgb(25, 169, 253);
+    font-family: 'Sansita Swashed', cursive, sans-serif;
+}
+
+header>nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+  }
+
+.logo {
+    letter-spacing: 8px;
+    
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 40%;
+}
+
+.links>li>a {
+    color: rgb(29, 57, 75);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.burger {
+    background: white;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+} 
+
+img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+article>div {
+    color: rgb(255, 255, 255);
+}
+
+/* @media screen and (max-width: 414px) {
+    
+    
+    .links {
+        width: 60%;
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+} */
+
+@media screen and (max-height: 736px) and (max-width: 414px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay-content {
+        margin: auto;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
